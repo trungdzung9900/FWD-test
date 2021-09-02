@@ -1,0 +1,14 @@
+.container {
+    width: auto;
+    margin: 0 auto;
+    
+    .welcome {
+        text-align: left;
+        &--title {
+            text-align: center;
+            margin-top: 40px;
+        }
+    }
+    
+
+}

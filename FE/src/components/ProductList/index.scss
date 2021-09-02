@@ -1,0 +1,20 @@
+$borderlist: #afc4e0;
+
+.product-list {
+    text-align: left;
+
+    &--item {
+        display: grid;
+        flex-direction: row;
+        align-items: center;
+        
+        border: 1px solid $borderlist;
+        border-radius: 5px;
+        padding: 110px;
+        p {
+            span {
+                margin-right: 10px;
+            }
+        }
+    }
+}
