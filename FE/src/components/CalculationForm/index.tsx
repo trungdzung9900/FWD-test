@@ -13,7 +13,9 @@ export const CalculationForm = () => {
     const [calculationType, setCalculateType] = React.useState('premium');
     const productLoading = useSelector((state: any) => state.products.loading);
     const dispatch = useDispatch();
-
+    const handleCalculateType = (type: any) => {
+        setCalculateType(type.target?.type);
+    }
     const handleCalculation = async (data: any) => {
         const payload = {
             ...data
@@ -25,15 +27,13 @@ export const CalculationForm = () => {
             getProducts(payload)
         );
     }
-    const handleCalculateType = (type: any) => {
-        setCalculateType(type.target?.type);
-    }
+ 
     return (
         <div className="welcome--form">
             <Form
                 name="basic"
                 labelCol={{ span: 4 }}
-                wrapperCol={{ span: 8 }}
+                wrapperCol={{ span: 9 }}
                 initialValues={{
                     type: calculationType,
                     genderCd: 'MALE',

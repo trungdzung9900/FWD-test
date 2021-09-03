@@ -5,7 +5,7 @@ export default function Header(){
   
     return (
         <Typography variant = "h4" align = "center" className = 'header'>
-             Insurance Premium Calculation
+             Insurance Calculation
         </Typography>
     )
 }
